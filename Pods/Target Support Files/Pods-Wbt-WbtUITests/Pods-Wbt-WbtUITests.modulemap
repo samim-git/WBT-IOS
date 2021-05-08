@@ -1,0 +1,6 @@
+framework module Pods_Wbt_WbtUITests {
+  umbrella header "Pods-Wbt-WbtUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

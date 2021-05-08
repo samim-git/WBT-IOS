@@ -1,0 +1,6 @@
+framework module Pods_Wbt {
+  umbrella header "Pods-Wbt-umbrella.h"
+
+  export *
+  module * { export * }
+}

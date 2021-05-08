@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  Wbt
+
+  Created by Hafizullah Samim on 5/3/21.
+  
+*/
+"appName" = "Take it!";
+"tab1" = "Home";
+"tab2" = "Favorite";
+"tab3" = "Me";
+"tab4" = "Me";
