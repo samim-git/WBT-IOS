@@ -3,13 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		B3E184897F66B29B0412860C /* Pods_Wbt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91B19096C9AEA0A956C3281C /* Pods_Wbt.framework */; };
 		BFFDAF5FA16C5D85410CC586 /* Pods_WbtTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83D9027FDB952D5787394A03 /* Pods_WbtTests.framework */; };
+		DB0BFE6A264A4BA800C5D45E /* SuggistionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0BFE69264A4BA800C5D45E /* SuggistionView.swift */; };
 		DB10CCF4263FDC78008F7BDF /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB10CCF3263FDC78008F7BDF /* MeViewController.swift */; };
+		DB3CB91C26466A09003E64A0 /* BookCagtegoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3CB91B26466A09003E64A0 /* BookCagtegoryView.swift */; };
 		DB8D582C263E6C810018A634 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8D582B263E6C810018A634 /* AppDelegate.swift */; };
 		DB8D5830263E6C810018A634 /* LauncherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8D582F263E6C810018A634 /* LauncherViewController.swift */; };
 		DB8D5836263E6C810018A634 /* Wbt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DB8D5834263E6C810018A634 /* Wbt.xcdatamodeld */; };
@@ -71,7 +73,9 @@
 		A9D96C09E1300E331562A8D2 /* Pods-Wbt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wbt.debug.xcconfig"; path = "Target Support Files/Pods-Wbt/Pods-Wbt.debug.xcconfig"; sourceTree = "<group>"; };
 		AE64AFF4CB64450F9E4FED00 /* Pods-Wbt-WbtUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wbt-WbtUITests.release.xcconfig"; path = "Target Support Files/Pods-Wbt-WbtUITests/Pods-Wbt-WbtUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B07C6C5214B835A0E45DE654 /* Pods-WbtTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WbtTests.release.xcconfig"; path = "Target Support Files/Pods-WbtTests/Pods-WbtTests.release.xcconfig"; sourceTree = "<group>"; };
+		DB0BFE69264A4BA800C5D45E /* SuggistionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggistionView.swift; sourceTree = "<group>"; };
 		DB10CCF3263FDC78008F7BDF /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
+		DB3CB91B26466A09003E64A0 /* BookCagtegoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCagtegoryView.swift; sourceTree = "<group>"; };
 		DB8D5828263E6C810018A634 /* Wbt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wbt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB8D582B263E6C810018A634 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB8D582F263E6C810018A634 /* LauncherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauncherViewController.swift; sourceTree = "<group>"; };
@@ -151,7 +155,6 @@
 				59CABAFFF9848A75365811DB /* Pods-WbtTests.debug.xcconfig */,
 				B07C6C5214B835A0E45DE654 /* Pods-WbtTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -286,6 +289,8 @@
 		DB8D5887263FC5290018A634 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				DB3CB91B26466A09003E64A0 /* BookCagtegoryView.swift */,
+				DB0BFE69264A4BA800C5D45E /* SuggistionView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -565,11 +570,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB0BFE6A264A4BA800C5D45E /* SuggistionView.swift in Sources */,
 				DB10CCF4263FDC78008F7BDF /* MeViewController.swift in Sources */,
 				DB8D5830263E6C810018A634 /* LauncherViewController.swift in Sources */,
 				DB8D5881263FB8B80018A634 /* LanguageManager.swift in Sources */,
 				DB8D5836263E6C810018A634 /* Wbt.xcdatamodeld in Sources */,
 				DB8D5863263E7FD30018A634 /* Theme.swift in Sources */,
+				DB3CB91C26466A09003E64A0 /* BookCagtegoryView.swift in Sources */,
 				DB8D5870263FB0750018A634 /* ItemSelectedDelegation.swift in Sources */,
 				DB8D582C263E6C810018A634 /* AppDelegate.swift in Sources */,
 				DB8D5865263E80210018A634 /* StringKeys.swift in Sources */,

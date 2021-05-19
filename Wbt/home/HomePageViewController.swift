@@ -24,14 +24,29 @@ class HomePageViewController: UIViewController {
         view.titleComps = ("Donate a Book!",Style.titleSmBoldFont,Style.colorTextPrimary)
         return view
     }()
+    let categoryView:BookCategoryView = {
+        let view = BookCategoryView()
+        view.translatesAutoresizingMaskIntoConstraints = false;
+        view.backgroundColor = Style.colorPrimaryDark
+        return view;
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = Style.colorPrimaryDark
+        self.view.addSubview(categoryView)
         self.view.addActionBarViewWithStatus(viewComps: (customActionBarView,Statics.actionBarHeight),statusBarColor:Style.colorPrimaryLight,marginFromTop:20)
+        
+        self.categoryView.topAnchor.constraint(equalTo: self.customActionBarView.bottomAnchor).isActive = true
+        self.categoryView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor).isActive = true
+        self.categoryView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor).isActive = true
+        self.categoryView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor,constant:-(Statics.tabBarHeight + self.view.safeAreaBottom)).isActive = true
+//        self.categoryView.backgroundColor = UIColor.white
         self.createMenuItems()
         // Do any additional setup after loading the view.
     }
 
+    
     
 
     /*
